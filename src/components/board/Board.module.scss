@@ -1,0 +1,31 @@
+// .boardrow {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.wrapStatus {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  :global .status {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: coral;
+    &.no_winner {
+      color: dimgray;
+    }
+    &.winner {
+      color: darkgreen;
+    }
+  }
+
+  :global .table {
+    border-collapse: collapse;
+  }
+}
